@@ -4,6 +4,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from collections import Counter
 
+#### Formula #####
+## Euclidean distance = sqrt(sum((x1 - x2)**2))
+
+
 
 class KNNeighbors(object):
     def __init__(self, K: int) -> None:

@@ -9,6 +9,17 @@ X, y = dataset.data, dataset.target
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
+#### Formula #####
+## linear = W * X + b
+## sigmoid = 1 / (1 + exp(-linear))
+
+## Gradient descent ##
+## dw = 1/N * sum(2 * X * (y_hat - y))
+## db = 1/N * sum(2 * (y_hat - y))
+
+## Update weight and bias ##
+## weight = weight - liarning_rate * dw
+## bias = bias - liarning_rate * db
 
 class LogisticRegression:
     def __init__(self, lr=0.01, n_iters=1000):
